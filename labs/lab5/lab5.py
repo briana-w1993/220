@@ -2,7 +2,7 @@
 Name: Briana Addison
 lab5.py
 
-Problem: This program solves several problems using for loops
+Problem: This program solves several problems using graphics and lists
 
 Certification of Authenticity:
 I certify that this assignment is entirely my own work.
