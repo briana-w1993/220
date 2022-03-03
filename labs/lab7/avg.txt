@@ -1,0 +1,5 @@
+Billy Bother's average:82.04
+Oh No's average: Weight is less than 100!
+Hermione Heffalump's average:97.02
+Too Bad's average: Weight is more than 100!
+Kurt The Kidd's average:99.06
