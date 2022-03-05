@@ -1,13 +1,10 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Briana Addison
+<hw7>.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
-
+Problem: This code solves the problem of using files in functions
 Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
 
 
@@ -57,19 +54,38 @@ def calc_check_sum(isbn):
 
 
 def send_message(file_name, friend_name):
-    pass
+    file_name = open(file_name, "r")
+    friend_name = open(friend_name, "w")
+    message = file_name.readlines()
+    friend_name.write(message)
 
 
-def encode():
-    pass
+
 
 
 def send_safe_message(file_name, friend_name, key):
-    pass
+    from encryption import encode
+    file_name = open(file_name,"r")
+    friend_name = open(friend_name,"w")
+    safe_encode = open("encryption.py", "r")
+    file_name = file_name.readlines()
+    safe_encode = safe_encode.readlines()
+    message = encode(file_name, key)
+    friend_name.write(str(message))
+
+
 
 
 def send_uncrackable_message(file_name, friend_name, pad_file_name):
-    pass
+    from encryption import encode_better
+    file_name = open(file_name, "r")
+    friend_name = open(friend_name, "w")
+    pad_file = open(pad_file_name, "r")
+    file_name = file_name.readlines()
+    pad_file = pad_file.readlines()
+    message = encode_better(file_name, pad_file)
+    friend_name.write(str(message))
+
 
 
 if __name__ == '__main__':
