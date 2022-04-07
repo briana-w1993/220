@@ -1,0 +1,6 @@
+NAME| Credit Hours| Quality
+
+Namjoon Kim, 100, 400
+Wonho Shim, 100, 385
+Katie Cat 60, 70
+Bobby Billy 12, 30

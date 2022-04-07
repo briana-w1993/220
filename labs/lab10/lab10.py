@@ -22,12 +22,13 @@ def main():
     button.get_label().draw(win)
     button.draw(win)
 
-    win.getMouse()
+    user_click = win.getMouse()
 
-    win.getMouse()
 
-    if door.is_clicked(Point(win.mouseX,win.mouseY)):
-        door.draw(win)
+
+
+    while door.is_clicked(user_click) == True:
+
         door.color_door("purple")
 
 

@@ -32,7 +32,13 @@ class Button:
         self.text.undraw()
 
     def is_clicked(self, point):
-        if point <= self.shape:
+        door_x_1 = self.shape.getP1().getX()
+        door_x_2 = self.shape.getP2().getX()
+        door_y_1 = self.shape.getP1().getY()
+        door_y_2 = self.shape.getP2().getY()
+        point_x = point.getX()
+        point_y = point.getY()
+        if door_x_1 <= point_x <= door_x_2 and door_y_1 <= point_y <= door_y_2:
             return True
         else:
             return False
